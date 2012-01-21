@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dummy</title>
+  <%= stylesheet_link_tag "blogit", "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div id="content">
+
+    
+    <%= yield %>  
+  </div>
+
+  <footer id="application_footer">
+    By <%= link_to("Gavin Morrice", "http://gavinmorrice.com") %>
+  </footer>
+
+</body>
+</html>
