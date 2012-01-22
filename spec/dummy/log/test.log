@@ -6257,3 +6257,53 @@ Completed 302 Found in 1ms
   Processing by ApplesController#update as HTML
   Parameters: {"apple"=>{"name"=>"steve"}, "id"=>"1"}
 Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  Processing by ApplesController#index as HTML
+  [1m[36mApple Load (0.4ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Rendered apples/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 44ms (Views: 40.5ms | ActiveRecord: 0.5ms)
+  Processing by ApplesController#index as HTML
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+  Processing by ApplesController#new as HTML
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  Processing by ApplesController#new as HTML
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  Processing by ApplesController#create as HTML
+  Parameters: {"apple"=>{"name"=>"steve"}}
+  [1m[35mSQL (12.1ms)[0m  INSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Sun, 22 Jan 2012 17:48:31 UTC +00:00], ["updated_at", Sun, 22 Jan 2012 17:48:31 UTC +00:00]]
+Redirected to http://test.host/apples/153
+Completed 302 Found in 71ms
+  Processing by ApplesController#create as HTML
+  Parameters: {"apple"=>{"name"=>"steve"}}
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Sun, 22 Jan 2012 17:48:31 UTC +00:00], ["updated_at", Sun, 22 Jan 2012 17:48:31 UTC +00:00]]
+Redirected to http://test.host/apples/154
+Completed 302 Found in 6ms
+  Processing by ApplesController#create as HTML
+  Parameters: {"apple"=>{"name"=>"steve"}}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+  Processing by ApplesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mApple Load (0.2ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+  Processing by ApplesController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  Processing by ApplesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.1ms)
+  Processing by ApplesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" LIMIT 1
+  Processing by ApplesController#update as HTML
+  Parameters: {"apple"=>{"name"=>"steve"}, "id"=>"1"}
+Redirected to http://test.host/apples/1
+Completed 302 Found in 2ms
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" LIMIT 1[0m
+  Processing by ApplesController#update as HTML
+  Parameters: {"apple"=>{"name"=>"steve"}, "id"=>"1"}
+Redirected to http://test.host/apples/1
+Completed 302 Found in 1ms
+  Processing by ApplesController#update as HTML
+  Parameters: {"apple"=>{"name"=>"steve"}, "id"=>"1"}
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms)
