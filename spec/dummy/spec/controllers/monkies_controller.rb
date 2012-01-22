@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ApplesController do
+describe MonkiesController do
 
   describe :index, "as HTML" do
 
@@ -58,7 +58,7 @@ describe ApplesController do
 
     it "sets the flash notice to 'Successfully created Apple'" do
       do_post
-      flash[:notice].should eql('Apple successfully created!')
+      flash[:notice].should eql('Successfully created Apple')
     end
 
   end
@@ -140,7 +140,7 @@ describe ApplesController do
 
     it "sets the flash notice to 'Successfully updated Apple'" do
       do_put
-      flash[:notice].should eql('Apple successfully updated!')
+      flash[:notice].should eql('Successfully updated Apple')
     end
 
   end
