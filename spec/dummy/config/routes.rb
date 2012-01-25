@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  
-  resources :apples, :monkies, :ninjas
-    
+
+  resources :monkies, :ninjas
+
+  resources :apples do
+    resources :chickens
+  end
+
 end

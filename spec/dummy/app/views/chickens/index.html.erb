@@ -1,0 +1,7 @@
+<% for chicken in @apple.chickens %>
+
+  <p><%= chicken.inspect %></p>
+
+<% end %>
+
+<%= link_to("new", new_apple_chicken_path(@apple)) %>

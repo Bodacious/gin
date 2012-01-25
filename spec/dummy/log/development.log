@@ -1751,3 +1751,1658 @@ Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 09:53:27 +0000
   Processing by MonkiesController#index as JSON
   [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
 Completed 406 Not Acceptable in 38ms
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 17:56:15 +0000
+  Processing by MonkiesController#index as JSON
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Completed 200 OK in 41ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/apples.json" for 127.0.0.1 at 2012-01-22 17:56:21 +0000
+  Processing by ApplesController#index as JSON
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-22 19:57:16 +0000
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (10.3ms)
+
+
+Started GET "/apples.json" for 127.0.0.1 at 2012-01-22 20:01:57 +0000
+  Processing by ApplesController#index as JSON
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/apples.json" for 127.0.0.1 at 2012-01-22 20:02:05 +0000
+  Processing by ApplesController#index as JSON
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "apples".* FROM "apples" 
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/monkeys.json" for 127.0.0.1 at 2012-01-22 20:40:02 +0000
+
+ActionController::RoutingError (No route matches [GET] "/monkeys.json"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 20:40:06 +0000
+  Processing by MonkiesController#index as JSON
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Completed 200 OK in 63ms (Views: 6.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/monkies.xml" for 127.0.0.1 at 2012-01-22 20:40:13 +0000
+  Processing by MonkiesController#index as XML
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" 
+Completed 406 Not Acceptable in 3ms
+
+
+Started GET "/monkies/new.json" for 127.0.0.1 at 2012-01-22 20:40:36 +0000
+  Processing by MonkiesController#new as JSON
+Completed 406 Not Acceptable in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-22 20:57:34 +0000
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (23.2ms)
+
+
+Started GET "/apples" for 127.0.0.1 at 2012-01-22 21:20:07 +0000
+  Processing by ApplesController#index as HTML
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Completed 500 Internal Server Error in 20ms
+
+NameError (undefined local variable or method `navigation_location' for #<ApplesController:0x007fcf9e980e48>):
+  app/controllers/apples_controller.rb:6:in `index'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (2.9ms)
+
+
+Started GET "/apples" for 127.0.0.1 at 2012-01-22 21:28:29 +0000
+  Processing by ApplesController#index as HTML
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" 
+Rendered apples/index.html.erb within layouts/application (2.2ms)
+Compiled application.css  (1ms)  (pid 49655)
+Compiled apples.css  (0ms)  (pid 49655)
+Compiled monkies.css  (0ms)  (pid 49655)
+Compiled ninjas.css  (0ms)  (pid 49655)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 21:28:29 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 21:28:29 +0000
+Served asset /apples.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 21:28:29 +0000
+Served asset /monkies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 21:28:29 +0000
+Served asset /ninjas.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 21:28:29 +0000
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/apples.json" for 127.0.0.1 at 2012-01-22 21:28:40 +0000
+  Processing by ApplesController#index as JSON
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Completed 500 Internal Server Error in 39ms
+
+ActionView::MissingTemplate (Missing template apples/index, application/index with {:handlers=>[:erb, :builder], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Gavin/Gems/gin/spec/dummy/app/views"
+):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/apples.json" for 127.0.0.1 at 2012-01-22 21:28:58 +0000
+  Processing by ApplesController#index as JSON
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" 
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-01-22 21:57:45 +0000
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started PUT "/apples/1.json" for 127.0.0.1 at 2012-01-22 22:29:00 +0000
+  Processing by ApplesController#update as JSON
+  Parameters: {"id"=>"1"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mApple Load (0.5ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 406 Not Acceptable in 9ms
+
+
+Started PUT "/apples/1.json" for 127.0.0.1 at 2012-01-22 22:29:15 +0000
+  Processing by ApplesController#update as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mApple Load (0.4ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 406 Not Acceptable in 7ms
+
+
+Started PUT "/apples/1.json" for 127.0.0.1 at 2012-01-22 22:29:55 +0000
+
+AbstractController::ActionNotFound (The action 'update' could not be found for ApplesController):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.1ms)
+
+
+Started PUT "/apples/1.json" for 127.0.0.1 at 2012-01-22 22:30:05 +0000
+  Processing by ApplesController#update as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mApple Load (0.4ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 406 Not Acceptable in 6ms
+
+
+Started PUT "/apples/1.json" for 127.0.0.1 at 2012-01-22 22:30:30 +0000
+  Processing by ApplesController#update as JSON
+  Parameters: {"apple"=>{"name"=>"keith"}, "id"=>"1"}
+  [1m[35mApple Load (0.4ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 406 Not Acceptable in 6ms
+
+
+Started PUT "/apples/2.json" for 127.0.0.1 at 2012-01-22 22:30:35 +0000
+  Processing by ApplesController#update as JSON
+  Parameters: {"apple"=>{"name"=>"keith"}, "id"=>"2"}
+  [1m[36mApple Load (0.5ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Completed 406 Not Acceptable in 6ms
+
+
+Started PUT "/apples/4.json" for 127.0.0.1 at 2012-01-22 22:30:39 +0000
+  Processing by ApplesController#update as JSON
+  Parameters: {"apple"=>{"name"=>"keith"}, "id"=>"4"}
+  [1m[35mApple Load (0.5ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "4"]]
+Completed 406 Not Acceptable in 7ms
+
+
+Started PUT "/apples/4.json" for 127.0.0.1 at 2012-01-22 22:31:16 +0000
+  Processing by ApplesController#update as JSON
+  Parameters: {"apple"=>{"name"=>"keith"}, "id"=>"4"}
+  [1m[36mApple Load (0.5ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Completed 200 OK in 30ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/apples/4.json" for 127.0.0.1 at 2012-01-22 22:31:30 +0000
+  Processing by ApplesController#update as JSON
+  Parameters: {"apple"=>{"name"=>"keith"}, "id"=>"4"}
+  [1m[35mApple Load (0.5ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "4"]]
+#<Apple:0x007fcf9e32faa8>
+Completed 200 OK in 39ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/apples/4.json" for 127.0.0.1 at 2012-01-22 22:31:40 +0000
+  Processing by ApplesController#update as JSON
+  Parameters: {"apple"=>{"name"=>"keith"}, "id"=>"4"}
+  [1m[36mApple Load (0.5ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "4"]]
+{"id"=>4, "created_at"=>Sat, 21 Jan 2012 23:39:43 UTC +00:00, "updated_at"=>Sat, 21 Jan 2012 23:39:43 UTC +00:00}
+Completed 200 OK in 33ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/apples/4.json" for 127.0.0.1 at 2012-01-22 22:32:00 +0000
+  Processing by ApplesController#update as JSON
+  Parameters: {"apple"=>{"name"=>"keith"}, "id"=>"4"}
+  [1m[35mApple Load (0.5ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "4"]]
+Completed 200 OK in 29ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/apples/4.json" for 127.0.0.1 at 2012-01-22 22:32:33 +0000
+  Processing by ApplesController#update as JSON
+  Parameters: {"apple"=>{"name"=>"keith"}, "id"=>"4"}
+  [1m[36mApple Load (0.4ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Completed 200 OK in 26ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/apples.json" for 127.0.0.1 at 2012-01-22 22:37:03 +0000
+  Processing by ApplesController#index as JSON
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" 
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/apples.json" for 127.0.0.1 at 2012-01-22 22:37:04 +0000
+  Processing by ApplesController#index as JSON
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 22:58:55 +0000
+  Processing by MonkiesController#index as JSON
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" 
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 22:59:13 +0000
+  Processing by MonkiesController#index as JSON
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Completed 500 Internal Server Error in 40ms
+
+NoMethodError (undefined method `monkey_url' for #<MonkiesController:0x007fcf9b616508>):
+  app/controllers/monkies_controller.rb:16:in `index'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.0ms)
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 22:59:21 +0000
+  Processing by MonkiesController#index as JSON
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" 
+Completed 500 Internal Server Error in 40ms
+
+NoMethodError (undefined method `monkie_url' for #<MonkiesController:0x007fcf9e0445f0>):
+  app/controllers/monkies_controller.rb:16:in `index'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.1ms)
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 23:00:26 +0000
+  Processing by MonkiesController#index as JSON
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Completed 406 Not Acceptable in 54ms
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 23:10:51 +0000
+
+ActionController::RoutingError (private method `alias_method' called for MonkiesController:Class):
+  app/controllers/monkies_controller.rb:3:in `<class:MonkiesController>'
+  app/controllers/monkies_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 23:11:07 +0000
+
+ActionController::RoutingError (undefined method `exclude_actions' for class `MonkiesController'):
+  app/controllers/monkies_controller.rb:3:in `<class:MonkiesController>'
+  app/controllers/monkies_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.8ms)
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 23:11:23 +0000
+
+ActionController::RoutingError (undefined method `undef_method' for class `MonkiesController'):
+  app/controllers/monkies_controller.rb:3:in `<class:MonkiesController>'
+  app/controllers/monkies_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (8.2ms)
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 23:14:03 +0000
+
+ActionController::RoutingError (undefined method `exclude_actions' for class `MonkiesController'):
+  app/controllers/monkies_controller.rb:3:in `<class:MonkiesController>'
+  app/controllers/monkies_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (8.1ms)
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 23:14:28 +0000
+
+ActionController::RoutingError (undefined method `undef_method' for class `MonkiesController'):
+  app/controllers/monkies_controller.rb:3:in `<class:MonkiesController>'
+  app/controllers/monkies_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.9ms)
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 23:14:50 +0000
+
+ActionController::RoutingError (undefined method `undef_method' for class `MonkiesController'):
+  app/controllers/monkies_controller.rb:3:in `<class:MonkiesController>'
+  app/controllers/monkies_controller.rb:1:in `<top (required)>'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 23:14:57 +0000
+  Processing by MonkiesController#index as JSON
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Completed 500 Internal Server Error in 109ms
+
+ActionView::MissingTemplate (Missing template monkies/index, application/index with {:handlers=>[:erb, :builder], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Gavin/Gems/gin/spec/dummy/app/views"
+):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (9.0ms)
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 23:15:59 +0000
+  Processing by MonkiesController#index as JSON
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Completed 406 Not Acceptable in 55ms
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 23:16:12 +0000
+  Processing by MonkiesController#index as JSON
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" 
+Completed 500 Internal Server Error in 56ms
+
+ActionView::MissingTemplate (Missing template monkies/index, application/index with {:handlers=>[:erb, :builder], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Gavin/Gems/gin/spec/dummy/app/views"
+):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (28.3ms)
+
+
+Started GET "/monkies.json" for 127.0.0.1 at 2012-01-22 23:16:17 +0000
+  Processing by MonkiesController#index as JSON
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Completed 406 Not Acceptable in 4ms
+
+
+Started GET "/monkies" for 127.0.0.1 at 2012-01-22 23:16:20 +0000
+  Processing by MonkiesController#index as HTML
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" 
+Rendered monkies/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 19ms (Views: 14.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:16:20 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:16:20 +0000
+Served asset /apples.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:16:20 +0000
+Served asset /monkies.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:16:20 +0000
+Served asset /ninjas.css - 304 Not Modified (1ms)
+
+
+Started GET "/monkies/new" for 127.0.0.1 at 2012-01-22 23:16:22 +0000
+  Processing by MonkiesController#new as HTML
+Rendered monkies/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:16:22 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:16:22 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:16:22 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:16:22 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started POST "/apples" for 127.0.0.1 at 2012-01-22 23:16:37 +0000
+  Processing by ApplesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H0Wi8qtxVAQFpKgSCiWDpkE3C4VpvQTEbqmTGzcitOM=", "commit"=>"Create Apple"}
+  [1m[36mSQL (15.7ms)[0m  [1mINSERT INTO "apples" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", Sun, 22 Jan 2012 23:16:37 UTC +00:00], ["updated_at", Sun, 22 Jan 2012 23:16:37 UTC +00:00]]
+Redirected to http://localhost:3000/apples/6
+Completed 302 Found in 80ms
+
+
+Started GET "/apples/6" for 127.0.0.1 at 2012-01-22 23:16:37 +0000
+  Processing by ApplesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "6"]]
+Rendered apples/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:16:37 +0000
+Served asset /blogit.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:16:37 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:16:37 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:16:37 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/6" for 127.0.0.1 at 2012-01-22 23:16:56 +0000
+  Processing by ApplesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "6"]]
+Rendered apples/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:16:56 +0000
+Served asset /blogit.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:16:56 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:16:56 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:16:56 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:16:56 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/monkies" for 127.0.0.1 at 2012-01-22 23:17:00 +0000
+  Processing by MonkiesController#index as HTML
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" 
+Rendered monkies/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:17:00 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:17:00 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:17:00 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:17:00 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:17:00 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/monkies" for 127.0.0.1 at 2012-01-22 23:17:24 +0000
+  Processing by MonkiesController#index as HTML
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Rendered monkies/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:17:24 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:17:24 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:17:24 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:17:24 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:17:24 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/monkies" for 127.0.0.1 at 2012-01-22 23:17:39 +0000
+
+AbstractController::ActionNotFound (The action 'index' could not be found for MonkiesController):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.3ms)
+
+
+Started GET "/monkies" for 127.0.0.1 at 2012-01-22 23:17:49 +0000
+  Processing by MonkiesController#index as HTML
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" 
+Completed 500 Internal Server Error in 7ms
+
+ActionView::MissingTemplate (Missing template monkies/index, application/index with {:handlers=>[:erb, :builder], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Gavin/Gems/gin/spec/dummy/app/views"
+):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/apples" for 127.0.0.1 at 2012-01-22 23:21:22 +0000
+  Processing by ApplesController#index as HTML
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" [0m
+Rendered apples/index.html.erb within layouts/application (10.5ms)
+Compiled application.css  (1ms)  (pid 50309)
+Compiled chickens.css  (0ms)  (pid 50309)
+Completed 200 OK in 71ms (Views: 69.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:21:22 +0000
+Served asset /blogit.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:21:22 +0000
+Served asset /apples.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:21:22 +0000
+Served asset /ninjas.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:21:22 +0000
+Served asset /chickens.css - 200 OK (1ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:21:22 +0000
+Served asset /monkies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:21:22 +0000
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:21:28 +0000
+
+AbstractController::ActionNotFound (The action 'index' could not be found for ChickensController):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.3ms)
+
+
+Started GET "/apples/1/chickens/new" for 127.0.0.1 at 2012-01-22 23:21:33 +0000
+  Processing by ChickensController#new as HTML
+  Parameters: {"apple_id"=>"1"}
+Rendered chickens/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:21:33 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:21:33 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:21:33 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:21:33 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:21:33 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:21:33 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1/chickens/new" for 127.0.0.1 at 2012-01-22 23:22:13 +0000
+  Processing by ChickensController#new as HTML
+  Parameters: {"apple_id"=>"1"}
+Rendered chickens/new.html.erb within layouts/application (35.2ms)
+Completed 500 Internal Server Error in 38ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+    1: <%= form_for(:apple, @chicken) do |f| %>
+    2:   
+    3:   <%= f.submit "Submit", :disable_with => 'Submitting...' %>
+    4:   
+  app/views/chickens/new.html.erb:1:in `_app_views_chickens_new_html_erb___4064593597422423421_70178229048900'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateApples (20120113182127)
+Migrating to CreateChickens (20120122232428)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "chickens" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "apple_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("chickens")
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_chickens_on_apple_id" ON "chickens" ("apple_id")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120122232428')
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("apples")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("chickens")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_chickens_on_apple_id')[0m
+
+
+Started GET "/apples/1/chickens/new" for 127.0.0.1 at 2012-01-22 23:24:46 +0000
+  Processing by ChickensController#new as HTML
+  Parameters: {"apple_id"=>"1"}
+Rendered chickens/new.html.erb within layouts/application (26.8ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@apple, @chicken) do |f| %>
+    2:   
+    3:   <%= f.submit "Submit", :disable_with => 'Submitting...' %>
+    4:   
+  app/views/chickens/new.html.erb:1:in `_app_views_chickens_new_html_erb__4112584842791201528_70108155354520'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/apples/1/chickens/new" for 127.0.0.1 at 2012-01-22 23:26:21 +0000
+  Processing by ChickensController#new as HTML
+  Parameters: {"apple_id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+
+NameError (undefined local variable or method `resource_singular_name' for #<Gin::DryController::BeforeFilters::SetResourceSingularIvar:0x007fac337055a8>):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.9ms)
+
+
+Started GET "/apples/1/chickens/new" for 127.0.0.1 at 2012-01-22 23:27:15 +0000
+  Processing by ChickensController#new as HTML
+  Parameters: {"apple_id"=>"1"}
+Rendered chickens/new.html.erb within layouts/application (27.2ms)
+Completed 500 Internal Server Error in 69ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@apple, @chicken) do |f| %>
+    2:   
+    3:   <%= f.submit "Submit", :disable_with => 'Submitting...' %>
+    4:   
+  app/views/chickens/new.html.erb:1:in `_app_views_chickens_new_html_erb___1302043739733941162_70362408255460'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/apples/1/chickens/new" for 127.0.0.1 at 2012-01-22 23:27:36 +0000
+  Processing by ChickensController#new as HTML
+  Parameters: {"apple_id"=>"1"}
+Rendered chickens/new.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined method `model_name' for NilClass:Class):
+    1: <%= form_for(@apple, @chicken) do |f| %>
+    2:   
+    3:   <%= f.submit "Submit", :disable_with => 'Submitting...' %>
+    4:   
+  app/views/chickens/new.html.erb:1:in `_app_views_chickens_new_html_erb___1302043739733941162_70362408255460'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.6ms)
+
+
+Started GET "/apples/1/chickens/new" for 127.0.0.1 at 2012-01-22 23:27:46 +0000
+  Processing by ChickensController#new as HTML
+  Parameters: {"apple_id"=>"1"}
+Rendered chickens/new.html.erb within layouts/application (46.2ms)
+Completed 500 Internal Server Error in 50ms
+
+ActionView::Template::Error (undefined method `chickens_path' for #<#<Class:0x007ffd0aad06d8>:0x007ffd0aab2c28>):
+    1: <%= form_for([@apple, @chicken]) do |f| %>
+    2:   
+    3:   <%= f.submit "Submit", :disable_with => 'Submitting...' %>
+    4:   
+  app/views/chickens/new.html.erb:1:in `_app_views_chickens_new_html_erb___1302043739733941162_70362391196140'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/apples/1/chickens/new" for 127.0.0.1 at 2012-01-22 23:27:57 +0000
+  Processing by ChickensController#new as HTML
+  Parameters: {"apple_id"=>"1"}
+Rendered chickens/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:27:57 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:27:57 +0000
+Served asset /monkies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:27:57 +0000
+Served asset /apples.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:27:57 +0000
+Served asset /chickens.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:27:57 +0000
+Served asset /ninjas.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:27:57 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1/chickens/new" for 127.0.0.1 at 2012-01-22 23:28:47 +0000
+  Processing by ChickensController#new as HTML
+  Parameters: {"apple_id"=>"1"}
+Rendered chickens/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:28:47 +0000
+Served asset /blogit.css - 404 Not Found (23ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:28:47 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:28:47 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:28:47 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:28:47 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:28:47 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:28:48 +0000
+  Processing by ChickensController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H0Wi8qtxVAQFpKgSCiWDpkE3C4VpvQTEbqmTGzcitOM=", "commit"=>"Submit", "apple_id"=>"1"}
+  [1m[36mSQL (16.5ms)[0m  [1mINSERT INTO "chickens" ("apple_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["apple_id", nil], ["created_at", Sun, 22 Jan 2012 23:28:48 UTC +00:00], ["name", nil], ["updated_at", Sun, 22 Jan 2012 23:28:48 UTC +00:00]]
+Redirected to 
+Completed 500 Internal Server Error in 67ms
+
+NoMethodError (undefined method `chicken_url' for #<ChickensController:0x007ffd0ad7a460>):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started POST "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:29:41 +0000
+  Processing by ChickensController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H0Wi8qtxVAQFpKgSCiWDpkE3C4VpvQTEbqmTGzcitOM=", "commit"=>"Submit", "apple_id"=>"1"}
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "chickens" ("apple_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["apple_id", nil], ["created_at", Sun, 22 Jan 2012 23:29:41 UTC +00:00], ["name", nil], ["updated_at", Sun, 22 Jan 2012 23:29:41 UTC +00:00]]
+Redirected to 
+Completed 404 Not Found in 59ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :id=>2, :apple_id=>nil, :controller=>"chickens"}):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/apples/1/chickens/new" for 127.0.0.1 at 2012-01-22 23:30:32 +0000
+  Processing by ChickensController#new as HTML
+  Parameters: {"apple_id"=>"1"}
+Rendered chickens/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:30:32 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:30:33 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:30:33 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:30:33 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:30:33 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:30:33 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started POST "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:30:38 +0000
+  Processing by ChickensController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H0Wi8qtxVAQFpKgSCiWDpkE3C4VpvQTEbqmTGzcitOM=", "commit"=>"Submit", "apple_id"=>"1"}
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "chickens" ("apple_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["apple_id", nil], ["created_at", Sun, 22 Jan 2012 23:30:38 UTC +00:00], ["name", nil], ["updated_at", Sun, 22 Jan 2012 23:30:38 UTC +00:00]]
+Redirected to 
+Completed 404 Not Found in 86ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :id=>3, :apple_id=>nil, :controller=>"chickens"}):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:31:10 +0000
+  Processing by ChickensController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H0Wi8qtxVAQFpKgSCiWDpkE3C4VpvQTEbqmTGzcitOM=", "commit"=>"Submit", "apple_id"=>"1"}
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "chickens" ("apple_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["apple_id", nil], ["created_at", Sun, 22 Jan 2012 23:31:10 UTC +00:00], ["name", nil], ["updated_at", Sun, 22 Jan 2012 23:31:10 UTC +00:00]]
+Redirected to 
+Completed 404 Not Found in 66ms
+
+ActionController::RoutingError (No route matches {:action=>"show", :id=>4, :apple_id=>nil, :controller=>"chickens"}):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started POST "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:32:20 +0000
+  Processing by ChickensController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H0Wi8qtxVAQFpKgSCiWDpkE3C4VpvQTEbqmTGzcitOM=", "commit"=>"Submit", "apple_id"=>"1"}
+  [1m[36mApple Load (0.2ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 36ms
+
+NameError (undefined local variable or method `action' for #<ChickensController:0x007fd54df8a370>):
+  app/controllers/chickens_controller.rb:11:in `set_chicken'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.4ms)
+
+
+Started POST "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:32:46 +0000
+  Processing by ChickensController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H0Wi8qtxVAQFpKgSCiWDpkE3C4VpvQTEbqmTGzcitOM=", "commit"=>"Submit", "apple_id"=>"1"}
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mSQL (16.0ms)[0m  [1mINSERT INTO "chickens" ("apple_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["apple_id", 1], ["created_at", Sun, 22 Jan 2012 23:32:46 UTC +00:00], ["name", nil], ["updated_at", Sun, 22 Jan 2012 23:32:46 UTC +00:00]]
+Redirected to http://localhost:3000/apples/1/chickens/5
+Completed 302 Found in 175ms
+
+
+Started GET "/apples/1/chickens/5" for 127.0.0.1 at 2012-01-22 23:32:46 +0000
+  Processing by ChickensController#show as HTML
+  Parameters: {"apple_id"=>"1", "id"=>"5"}
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mChicken Load (0.2ms)[0m  [1mSELECT "chickens".* FROM "chickens" WHERE "chickens"."apple_id" = 1 AND "chickens"."id" = ? LIMIT 1[0m  [["id", "5"]]
+Completed 500 Internal Server Error in 54ms
+
+ActionView::MissingTemplate (Missing template chickens/show, application/show with {:handlers=>[:erb, :builder], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Gavin/Gems/gin/spec/dummy/app/views"
+):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/apples/1/chickens/5" for 127.0.0.1 at 2012-01-22 23:33:03 +0000
+  Processing by ChickensController#show as HTML
+  Parameters: {"apple_id"=>"1", "id"=>"5"}
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mChicken Load (0.1ms)[0m  [1mSELECT "chickens".* FROM "chickens" WHERE "chickens"."apple_id" = 1 AND "chickens"."id" = ? LIMIT 1[0m  [["id", "5"]]
+Rendered chickens/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 25ms (Views: 14.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:33:03 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:33:03 +0000
+Served asset /chickens.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:33:03 +0000
+Served asset /monkies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:33:03 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:33:03 +0000
+Served asset /ninjas.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:33:03 +0000
+Served asset /apples.css - 304 Not Modified (1ms)
+
+
+Started GET "/apples/1/chickens/" for 127.0.0.1 at 2012-01-22 23:33:09 +0000
+  Processing by ChickensController#index as HTML
+  Parameters: {"apple_id"=>"1"}
+  [1m[35mChicken Load (0.1ms)[0m  SELECT "chickens".* FROM "chickens" 
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template chickens/index, application/index with {:handlers=>[:erb, :builder], :formats=>[:html], :locale=>[:en, :en]}. Searched in:
+  * "/Users/Gavin/Gems/gin/spec/dummy/app/views"
+):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/apples/1/chickens/" for 127.0.0.1 at 2012-01-22 23:33:54 +0000
+  Processing by ChickensController#index as HTML
+  Parameters: {"apple_id"=>"1"}
+  [1m[36mChicken Load (0.1ms)[0m  [1mSELECT "chickens".* FROM "chickens" [0m
+Rendered chickens/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `chickens' for nil:NilClass):
+    1: <% for chicken in @apple.chickens %>
+    2: 
+    3:   <%= chicken.inspect %>
+    4: 
+  app/views/chickens/index.html.erb:1:in `_app_views_chickens_index_html_erb__838390776696506054_70277056560080'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.6ms)
+
+
+Started GET "/apples/1/chickens/" for 127.0.0.1 at 2012-01-22 23:34:32 +0000
+  Processing by ChickensController#index as HTML
+  Parameters: {"apple_id"=>"1"}
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mChicken Load (0.2ms)[0m  [1mSELECT "chickens".* FROM "chickens" WHERE "chickens"."apple_id" = 1[0m
+Rendered chickens/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 25ms (Views: 16.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:34:32 +0000
+Served asset /blogit.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:32 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:32 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:32 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:32 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:32 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1/chickens/" for 127.0.0.1 at 2012-01-22 23:34:42 +0000
+  Processing by ChickensController#index as HTML
+  Parameters: {"apple_id"=>"1"}
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mChicken Load (0.1ms)[0m  [1mSELECT "chickens".* FROM "chickens" WHERE "chickens"."apple_id" = 1[0m
+Rendered chickens/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 18ms (Views: 12.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:34:42 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:42 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:42 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:42 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:42 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:42 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1/chickens/" for 127.0.0.1 at 2012-01-22 23:34:59 +0000
+  Processing by ChickensController#index as HTML
+  Parameters: {"apple_id"=>"1"}
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mChicken Load (0.1ms)[0m  [1mSELECT "chickens".* FROM "chickens" WHERE "chickens"."apple_id" = 1[0m
+Rendered chickens/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 19ms (Views: 12.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:34:59 +0000
+Served asset /blogit.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:59 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:59 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:59 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:59 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:34:59 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1/chickens/new" for 127.0.0.1 at 2012-01-22 23:35:00 +0000
+  Processing by ChickensController#new as HTML
+  Parameters: {"apple_id"=>"1"}
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered chickens/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 24ms (Views: 11.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:35:00 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:00 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:00 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:00 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:00 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:00 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:35:01 +0000
+  Processing by ChickensController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H0Wi8qtxVAQFpKgSCiWDpkE3C4VpvQTEbqmTGzcitOM=", "commit"=>"Submit", "apple_id"=>"1"}
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "chickens" ("apple_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["apple_id", 1], ["created_at", Sun, 22 Jan 2012 23:35:01 UTC +00:00], ["name", nil], ["updated_at", Sun, 22 Jan 2012 23:35:01 UTC +00:00]]
+Redirected to http://localhost:3000/apples/1/chickens/6
+Completed 302 Found in 73ms
+
+
+Started GET "/apples/1/chickens/6" for 127.0.0.1 at 2012-01-22 23:35:01 +0000
+  Processing by ChickensController#show as HTML
+  Parameters: {"apple_id"=>"1", "id"=>"6"}
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mChicken Load (0.1ms)[0m  SELECT "chickens".* FROM "chickens" WHERE "chickens"."apple_id" = 1 AND "chickens"."id" = ? LIMIT 1  [["id", "6"]]
+Rendered chickens/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 19ms (Views: 9.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:35:01 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:01 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:01 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:01 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:01 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:01 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1/chickens/6" for 127.0.0.1 at 2012-01-22 23:35:20 +0000
+  Processing by ChickensController#show as HTML
+  Parameters: {"apple_id"=>"1", "id"=>"6"}
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mChicken Load (0.2ms)[0m  SELECT "chickens".* FROM "chickens" WHERE "chickens"."apple_id" = 1 AND "chickens"."id" = ? LIMIT 1  [["id", "6"]]
+Rendered chickens/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 19ms (Views: 9.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:35:20 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:20 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:20 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:20 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:20 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:20 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1" for 127.0.0.1 at 2012-01-22 23:35:21 +0000
+  Processing by ApplesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered apples/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:35:21 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:21 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:21 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:21 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:21 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:21 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1" for 127.0.0.1 at 2012-01-22 23:35:25 +0000
+  Processing by ApplesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered apples/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:35:25 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:25 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:25 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:25 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:25 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:25 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1" for 127.0.0.1 at 2012-01-22 23:35:43 +0000
+  Processing by ApplesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered apples/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:35:44 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:44 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:44 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:44 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:44 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:44 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:35:46 +0000
+  Processing by ChickensController#index as HTML
+  Parameters: {"apple_id"=>"1"}
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mChicken Load (0.1ms)[0m  [1mSELECT "chickens".* FROM "chickens" WHERE "chickens"."apple_id" = 1[0m
+Rendered chickens/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 37ms (Views: 30.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:35:46 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:46 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:46 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:46 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:46 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:46 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1/chickens/new" for 127.0.0.1 at 2012-01-22 23:35:49 +0000
+  Processing by ChickensController#new as HTML
+  Parameters: {"apple_id"=>"1"}
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+Rendered chickens/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 37ms (Views: 6.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:35:49 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:49 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:49 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:49 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:49 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:49 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started POST "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:35:50 +0000
+  Processing by ChickensController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H0Wi8qtxVAQFpKgSCiWDpkE3C4VpvQTEbqmTGzcitOM=", "commit"=>"Submit", "apple_id"=>"1"}
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "chickens" ("apple_id", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?)  [["apple_id", 1], ["created_at", Sun, 22 Jan 2012 23:35:50 UTC +00:00], ["name", nil], ["updated_at", Sun, 22 Jan 2012 23:35:50 UTC +00:00]]
+Redirected to http://localhost:3000/apples/1/chickens/7
+Completed 302 Found in 96ms
+
+
+Started GET "/apples/1/chickens/7" for 127.0.0.1 at 2012-01-22 23:35:50 +0000
+  Processing by ChickensController#show as HTML
+  Parameters: {"apple_id"=>"1", "id"=>"7"}
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mChicken Load (0.1ms)[0m  SELECT "chickens".* FROM "chickens" WHERE "chickens"."apple_id" = 1 AND "chickens"."id" = ? LIMIT 1  [["id", "7"]]
+Rendered chickens/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 19ms (Views: 9.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:35:50 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (19.6ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:50 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:50 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:50 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:50 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:50 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:35:52 +0000
+  Processing by ChickensController#index as HTML
+  Parameters: {"apple_id"=>"1"}
+  [1m[36mApple Load (0.1ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mChicken Load (0.2ms)[0m  SELECT "chickens".* FROM "chickens" WHERE "chickens"."apple_id" = 1
+Rendered chickens/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 19ms (Views: 12.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:35:52 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:52 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:52 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:52 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:52 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:35:52 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:38:07 +0000
+  Processing by ChickensController#index as HTML
+  Parameters: {"apple_id"=>"1"}
+  [1m[36mChicken Load (0.1ms)[0m  [1mSELECT "chickens".* FROM "chickens" [0m
+Rendered chickens/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `chickens' for nil:NilClass):
+    1: <% for chicken in @apple.chickens %>
+    2: 
+    3:   <p><%= chicken.inspect %></p>
+    4: 
+  app/views/chickens/index.html.erb:1:in `_app_views_chickens_index_html_erb__838390776696506054_70277067576320'
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.8ms)
+
+
+Started GET "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:38:29 +0000
+  Processing by ChickensController#index as HTML
+  Parameters: {"apple_id"=>"1"}
+  [1m[35mApple Load (0.1ms)[0m  SELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36mChicken Load (0.2ms)[0m  [1mSELECT "chickens".* FROM "chickens" WHERE "chickens"."apple_id" = 1[0m
+Rendered chickens/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 23ms (Views: 15.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:38:29 +0000
+Served asset /blogit.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:38:29 +0000
+Served asset /apples.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:38:29 +0000
+Served asset /chickens.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:38:29 +0000
+Served asset /monkies.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:38:29 +0000
+Served asset /ninjas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:38:29 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/apples/1/chickens" for 127.0.0.1 at 2012-01-22 23:39:49 +0000
+  Processing by ChickensController#index as HTML
+  Parameters: {"apple_id"=>"1"}
+  [1m[36mApple Load (0.2ms)[0m  [1mSELECT "apples".* FROM "apples" WHERE "apples"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35mChicken Load (0.2ms)[0m  SELECT "chickens".* FROM "chickens" WHERE "chickens"."apple_id" = 1
+Rendered chickens/index.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 127ms (Views: 77.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/blogit.css" for 127.0.0.1 at 2012-01-22 23:39:50 +0000
+Served asset /blogit.css - 404 Not Found (1ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blogit.css"):
+  
+
+Rendered /Users/Gavin/.rvm/gems/ruby-1.9.2-p290@global/gems/actionpack-3.1.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/chickens.css?body=1" for 127.0.0.1 at 2012-01-22 23:39:50 +0000
+Served asset /chickens.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/apples.css?body=1" for 127.0.0.1 at 2012-01-22 23:39:50 +0000
+Served asset /apples.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-01-22 23:39:50 +0000
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/monkies.css?body=1" for 127.0.0.1 at 2012-01-22 23:39:50 +0000
+Served asset /monkies.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ninjas.css?body=1" for 127.0.0.1 at 2012-01-22 23:39:50 +0000
+Served asset /ninjas.css - 304 Not Modified (1ms)
